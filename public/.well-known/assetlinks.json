@@ -1,0 +1,11 @@
+[{
+  "relation": [
+    "delegate_permission/common.handle_all_urls",
+    "delegate_permission/common.get_login_creds"
+  ],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.extrawatts.flux",
+    "sha256_cert_fingerprints": ["7efa12a0e77677acd5e7d53adca7550382431ca6dc3654157e158d73ec0d3e82", "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b833266759103b9c"]
+  }
+}]
