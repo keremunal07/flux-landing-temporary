@@ -23,19 +23,26 @@ export default function Hero() {
       <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10 px-16">
         <div className="space-y-8">
           <div className="space-y-6">
-            <Typography variant="h1" as="h1" className="max-w-lg">
+            <Typography
+              variant="h1"
+              as="h1"
+              className="max-w-lg font-sf-pro-display"
+            >
               The Better Bank You Control
             </Typography>
             <Typography variant="body-r" className="text-muted-foreground">
               Build wealth. Spend it anywhere. Zero limits.
             </Typography>
-            <p className="text-xl "></p>
+            <p className="text-xl"></p>
           </div>
 
           <div className="space-y-4 max-w-3xs">
             <div className="flex flex-col gap-3">
-              <Input placeholder="Your Email" />
-              <Button>
+              <Input
+                placeholder="Your Email"
+                className="h-12 rounded-2xl bg-white text-center font-sf-pro-text font-medium"
+              />
+              <Button className="h-12 rounded-2xl font-sf-pro-text">
                 <CircleArrowRight /> Get Early Access
               </Button>
             </div>

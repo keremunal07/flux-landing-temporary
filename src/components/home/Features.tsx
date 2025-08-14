@@ -41,10 +41,10 @@ export default function Features() {
   return (
     <section className="py-20">
       <div className="text-center mb-16">
-        <h2 className="text-4xl lg:text-5xl font-bold text-background mb-6">
+        <h2 className="text-4xl lg:text-5xl font-bold font-sf-pro-display text-background mb-6">
           Smarter Money Runs On Self-Custody
         </h2>
-        <p className="text-xl text-muted-foreground max-w-4xl mx-auto font-medium">
+        <p className="text-xl text-muted-foreground max-w-5xl mx-auto font-medium">
           A programmable account that grows your balance, powers your payments,
           and protects your assets.
         </p>
@@ -58,7 +58,7 @@ export default function Features() {
           <TabsTrigger value="schedule" className="text-sm font-medium">
             Grow & Trade
           </TabsTrigger>
-          <TabsTrigger value="spend" className="text-sm font-medium">
+          <TabsTrigger value="spend" className="text-sm font-medium w-42">
             Protect & Automate
           </TabsTrigger>
         </TabsList>

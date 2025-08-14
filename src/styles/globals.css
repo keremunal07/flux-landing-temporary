@@ -50,7 +50,7 @@
 @theme inline {
   --color-background: var(--foreground);
   --color-foreground: var(--background);
-  --font-sans: var(--font-sf-pro);
+  --font-sans: var(--font-sf-pro-text);
   --font-inter: var(--font-inter);
   --color-flux-main: var(--flux-main-b200);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -91,7 +91,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sf-pro), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sf-pro-text), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -100,8 +100,12 @@ body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
-.font-sf-pro {
-  font-family: var(--font-sf-pro), Arial, Helvetica, sans-serif;
+.font-sf-pro-text {
+  font-family: var(--font-sf-pro-text), Arial, Helvetica, sans-serif;
+}
+
+.font-sf-pro-display {
+  font-family: var(--font-sf-pro-display), Arial, Helvetica, sans-serif;
 }
 
 /* Background patterns */

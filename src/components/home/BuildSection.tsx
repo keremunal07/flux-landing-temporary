@@ -8,7 +8,7 @@ export default function BuildSection() {
       <Typography
         variant="h1"
         as="h2"
-        className="text-4xl lg:text-5xl font-bold mx-auto text-center"
+        className="text-4xl lg:text-5xl font-bold mx-auto text-center font-sf-pro-display"
       >
         Build for What Comes Next
       </Typography>
@@ -20,8 +20,9 @@ export default function BuildSection() {
         Why modern users are choosing Flux over legacy platforms
       </Typography>
 
-      <div className="w-screen bg-[#121212] -mx-[calc(50vw-50%)] py-10 mt-8">
-        <div className="container max-w-[1400px] px-4 mx-auto text-white overflow-x-scroll">
+      <div className="py-10 mt-8 rounded-2xl relative">
+        <div className="absolute inset-0 bg-[#121212] z-0 rounded-2xl w-[120%] left-1/2 -translate-x-1/2" />
+        <div className="px-4 text-white overflow-x-scroll relative">
           <table className="w-full min-w-[855px]">
             <thead>
               <tr className="border-b border-[#353535]">

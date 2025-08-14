@@ -79,12 +79,12 @@ export default function StablecoinSection() {
           {carouselData.map((item, idx) => (
             <CarouselItem key={idx} className="w-full">
               <div className="grid lg:grid-cols-2 items-center w-full">
-                <div className="w-full px-10">
+                <div className="w-full pl-6">
                   <div className="w-full flex items-start flex-col gap-10">
                     <Typography
                       variant="h1"
                       as="h2"
-                      className="text-4xl lg:text-5xl font-bold max-w-sm"
+                      className="text-4xl lg:text-5xl font-bold font-sf-pro-display max-w-sm"
                     >
                       Use Stablecoins for everything
                     </Typography>

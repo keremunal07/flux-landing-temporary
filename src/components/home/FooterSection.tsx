@@ -20,7 +20,7 @@ export default function FooterSection() {
           <Typography
             variant="h1"
             as="h2"
-            className="text-4xl lg:text-5xl font-bold mx-auto text-center mb-3"
+            className="text-4xl lg:text-5xl font-bold mx-auto text-center mb-3 font-sf-pro-display"
           >
             Take control of your wealth now.
           </Typography>
@@ -45,25 +45,42 @@ export default function FooterSection() {
         <div className="w-full flex justify-between items-center py-8 border-b border-[#BCC4CC] relative">
           <div />
           <div className="flex items-center justify-center gap-5 absolute left-1/2 -translate-x-1/2">
-            <Image
-              width={32}
-              height={32}
-              src="/social/instagram.svg"
-              alt="Instagram"
-            />
-            <Image
-              width={32}
-              height={32}
-              src="/social/telegram.svg"
-              alt="Telegram"
-            />
-            <Image
-              width={32}
-              height={32}
-              src="/social/linkedin.svg"
-              alt="Linkedin"
-            />
-            <Image width={32} height={32} src="/social/x.svg" alt="x" />
+            {/* <Link href="https://www.instagram.com/flux.app/">
+              <Image
+                width={32}
+                height={32}
+                src="/social/instagram.svg"
+                alt="Instagram"
+                className="cursor-pointer"
+              />
+            </Link> */}
+            <Link href="https://t.me/flux_app">
+              <Image
+                width={32}
+                height={32}
+                src="/social/telegram.svg"
+                alt="Telegram"
+                className="cursor-pointer"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/company/fluxmoney">
+              <Image
+                width={32}
+                height={32}
+                src="/social/linkedin.svg"
+                alt="Linkedin"
+                className="cursor-pointer"
+              />
+            </Link>
+            <Link href="https://x.com/FluxOnchain">
+              <Image
+                width={32}
+                height={32}
+                src="/social/x.svg"
+                alt="x"
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
 
           <div className="flex items-center justify-center gap-6">

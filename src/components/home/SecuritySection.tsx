@@ -20,7 +20,7 @@ export default function SecuritySection() {
             <Typography
               variant="h1"
               as="h2"
-              className="text-4xl lg:text-5xl font-bold text-white"
+              className="text-4xl lg:text-5xl font-bold font-sf-pro-display text-white"
             >
               Total Control,
               <br /> Zero Complexity

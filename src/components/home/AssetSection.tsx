@@ -3,26 +3,27 @@ import { Typography } from "../ui/typography";
 
 export default function AssetSection() {
   return (
-    <section className="py-20 relative grid lg:grid-cols-2 gap-16">
+    <section className="py-20 relative grid lg:grid-cols-2 gap-12">
       <div>
-        <div className="px-10">
+        <div className="pl-6">
           <Typography
             variant="h1"
             as="h2"
-            className="text-4xl lg:text-5xl font-bold"
+            className="text-4xl lg:text-5xl font-bold font-sf-pro-display"
           >
             Money That Works
           </Typography>
           <Typography
             variant="h1"
             as="h3"
-            className="text-2xl my-4 text-[#555D67]"
+            className="text-2xl my-4 font-medium text-[#555D67]"
           >
             Every asset in your wallet works for you, automatically.
           </Typography>
           <Typography variant="body-s" className="text-[#777F89]">
-            Access top DeFi vaults built to outperform traditional savings. No
-            lockups, no minimums, and no reliance on centralized platforms.
+            Access top DeFi vaults built to outperform traditional savings.{" "}
+            <br /> No lockups, no minimums, and no reliance on centralized
+            platforms.
           </Typography>
         </div>
 

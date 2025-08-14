@@ -18,7 +18,6 @@ const statsData = [
     conclusion:
       "No more fragile keys. Flux makes self-custody secure, simple, and recoverable.",
     gradient: "from-blue-600 via-purple-600 to-red-600",
-    backgroundImage: "/carousel-bg.png",
   },
   {
     title: "When Wallets Break, You Pay.",
@@ -28,7 +27,6 @@ const statsData = [
     unit: "Billion",
     conclusion: "Don't trust luck. Trust programmable security.",
     gradient: "from-blue-700 via-purple-700 to-orange-600",
-    backgroundImage: "/carousel-bg.png",
   },
   {
     title: "You Earn Pennies. They Earn Billions.",
@@ -38,7 +36,6 @@ const statsData = [
     unit: "Billion",
     conclusion: "Put your balance to work with up to 25% APY.",
     gradient: "from-blue-800 via-purple-800 to-red-700",
-    backgroundImage: "/carousel-bg.png",
   },
 ];
 
@@ -87,13 +84,13 @@ export default function StatsCarousel() {
           }),
         ]}
       >
-        <CarouselContent className="h-screen">
+        <CarouselContent className="h-screen mt-0">
           {statsData.map((stat, index) => (
-            <CarouselItem key={index} className="h-screen">
+            <CarouselItem key={index} className="h-screen m-0 p-0">
               <div className="relative w-full h-full flex items-center justify-center">
                 <div className="absolute inset-0">
                   <Image
-                    src={stat.backgroundImage}
+                    src="/carousel-bg.webp"
                     alt="Background"
                     fill
                     className="object-cover pointer-events-none"
@@ -101,20 +98,22 @@ export default function StatsCarousel() {
                     quality={100}
                     unoptimized={true}
                     sizes="100vw"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAEDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                   />
                 </div>
 
                 <div className="relative z-10 text-center text-white px-8 max-w-4xl">
-                  <h2 className="text-4x lg:text-5xl font-bold mb-8 leading-14">
+                  <h2 className="text-4x lg:text-5xl font-bold font-sf-pro-display mb-8 leading-14">
                     {stat.title}
                   </h2>
 
-                  <p className="text-lg lg:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-[140%]">
+                  <p className="text-lg lg:text-[22px] text-gray-300 mb-12 max-w-lg mx-auto leading-[140%]">
                     {stat.subtitle}
                   </p>
 
                   <div className="mb-16">
-                    <div className="flex flex-col items-center justify-center text-8xl lg:text-9xl font-black text-white mb-2">
+                    <div className="flex flex-col items-center justify-center text-8xl lg:text-9xl font-black font-sf-pro-display text-white mb-2">
                       <span>{stat.number}</span>
                       <span>{stat.unit}</span>
                     </div>
@@ -135,7 +134,7 @@ export default function StatsCarousel() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2 h-8 rounded-md transition-all duration-300 ${
+                className={`w-[3px] h-9 transition-all duration-300 ${
                   currentSlide === index
                     ? "bg-blue-500"
                     : "bg-gray-400 hover:bg-gray-300"

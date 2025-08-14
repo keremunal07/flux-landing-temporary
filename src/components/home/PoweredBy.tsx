@@ -6,39 +6,63 @@ import Autoplay from "embla-carousel-autoplay";
 const partners = [
   {
     name: "ethereum",
-    logo: "/logos/ethereum.png",
+    logo: "/logos/ethereum.svg",
   },
   {
     name: "ARBITRUM",
-    logo: "/logos/arbitrum.png",
+    logo: "/logos/arbitrum.svg",
   },
   {
     name: "base",
-    logo: "/logos/base.png",
+    logo: "/logos/base.svg",
   },
   {
     name: "Safe",
-    logo: "/logos/safe.png",
+    logo: "/logos/safe.svg",
   },
   {
     name: "Hyperliquid",
-    logo: "/logos/hyperliquid.png",
+    logo: "/logos/hyperliquid.svg",
   },
   {
     name: "aave",
-    logo: "/logos/aave.png",
+    logo: "/logos/aave.svg",
   },
   {
     name: "tether",
-    logo: "/logos/tether.png",
+    logo: "/logos/tether.svg",
   },
   {
     name: "USD Coin",
-    logo: "/logos/usdc.png",
+    logo: "/logos/usdc.svg",
   },
   {
     name: "UNISWAP",
-    logo: "/logos/uniswap.png",
+    logo: "/logos/uniswap.svg",
+  },
+  {
+    name: "COWSWAP",
+    logo: "/logos/cowswap.svg",
+  },
+  {
+    name: "PENDLE",
+    logo: "/logos/pendle.svg",
+  },
+  {
+    name: "LIDO",
+    logo: "/logos/lido.svg",
+  },
+  {
+    name: "ETHENA",
+    logo: "/logos/ethena.svg",
+  },
+  {
+    name: "LIFI",
+    logo: "/logos/lifi.svg",
+  },
+  {
+    name: "SOCKET",
+    logo: "/logos/socket.svg",
   },
 ];
 
@@ -57,14 +81,16 @@ export default function PoweredBy({
     <section className={`py-16 ${className}`}>
       {showTitle && (
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-semibold text-background">Powered By</h2>
+          <h2 className="text-2xl font-bold font-sf-pro-display text-background">
+            Powered By
+          </h2>
         </div>
       )}
 
       <div className="flex justify-center items-center">
         <Carousel
           ref={carouselRef}
-          className="w-full max-w-6xl"
+          className="w-full max-w-full"
           opts={{
             loop: true,
             dragFree: true,
@@ -78,26 +104,23 @@ export default function PoweredBy({
             }),
           ]}
         >
-          <CarouselContent className="-ml-2 md:-ml-4">
+          <CarouselContent>
             {partners.map((partner) => (
               <CarouselItem
                 key={partner.name}
-                className="pl-2 md:pl-4 basis-auto"
+                className="basis-1/9 flex items-center justify-center"
               >
-                <div className="flex flex-col items-center gap-2 cursor-pointer">
-                  <div className="relative">
-                    <Image
-                      src={partner.logo}
-                      alt={`${partner.name} logo`}
-                      width={140}
-                      height={40}
-                      className="object-contain"
-                      quality={100}
-                      priority={false}
-                      unoptimized={false}
-                    />
-                  </div>
-                </div>
+                <Image
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  width={0}
+                  height={0}
+                  sizes="160px"
+                  className="w-auto h-auto  object-contain"
+                  quality={100}
+                  priority={false}
+                  unoptimized={false}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>

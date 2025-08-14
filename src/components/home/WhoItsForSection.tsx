@@ -13,14 +13,14 @@ const features = [
 
 export default function WhoItsForSection() {
   return (
-    <section className="w-screen bg-[#D9D9D9] -mx-[calc(50vw-50%)] py-20 my-20">
+    <section className="w-screen bg-[#D9D9D933] -mx-[calc(50vw-50%)] py-20 my-20">
       <div className="container max-w-[1400px] px-4 mx-auto grid lg:grid-cols-2">
         <div className="w-full flex justify-start items-center">
-          <div className="px-10 w-full">
+          <div className="pl-6 w-full">
             <Typography
               variant="h1"
               as="h2"
-              className="text-4xl lg:text-5xl font-bold"
+              className="text-4xl lg:text-5xl font-bold font-sf-pro-display"
             >
               Who It&apos;s For
             </Typography>
@@ -32,7 +32,7 @@ export default function WhoItsForSection() {
               Made for modern money movers
             </Typography>
 
-            <div className="flex flex-col gap-5 max-w-xs ml-2">
+            <div className="flex flex-col gap-5 max-w-sm ml-2">
               {features.map((feature, index) => (
                 <div
                   key={index}
