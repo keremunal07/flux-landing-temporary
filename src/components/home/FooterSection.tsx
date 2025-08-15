@@ -42,7 +42,7 @@ export default function FooterSection() {
       </section>
 
       <footer className="my-10">
-        <div className="w-full flex justify-between items-center py-8 border-b border-[#BCC4CC] relative">
+        <div className="w-full flex justify-between items-center py-8 border-b border-[#BCC4CC] relative mb-8">
           <div />
           <div className="flex items-center justify-center gap-5 absolute left-1/2 -translate-x-1/2">
             {/* <Link href="https://www.instagram.com/flux.app/">
@@ -94,6 +94,64 @@ export default function FooterSection() {
                 Terms of Service
               </Typography>
             </Link>
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+            Disclaimers
+          </Typography>
+          <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+            All Rights Reserved © 2025 Flux.
+          </Typography>
+        </div>
+        <div className="grid lg:grid-cols-2 mt-3">
+          <div className="flex flex-col gap-y-3 gap-x-10 mt-3">
+            <div className="flex items-start gap-3">
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                1.
+              </Typography>
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                Flux is a financial technology platform, not a bank or a digital
+                asset custodian.
+              </Typography>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                3.
+              </Typography>
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                Local jurisdictions or partners may require KYC or address
+                verification for certain services (e.g., fiat accounts, card
+                issuance, or regulated financial products). Flux itself does not
+                perform these checks unless required by applicable law or a
+                service provider.
+              </Typography>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-3 gap-x-10 mt-3">
+            <div className="flex items-start gap-3">
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                2.
+              </Typography>
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                Flux does not hold user funds, company information, or have
+                control over user funds. All assets are held in self-custodial
+                smart accounts, secured by passkeys, biometrics, or hardware
+                wallets.
+              </Typography>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                4.
+              </Typography>
+              <Typography variant="body-s" className="text-xs text-[#BCC4CC]">
+                Any debit card, virtual account, or off-ramp services are
+                provided by regulated third-party partners, subject to their
+                terms and conditions.
+              </Typography>
+            </div>
           </div>
         </div>
       </footer>

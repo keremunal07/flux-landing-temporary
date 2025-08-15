@@ -96,14 +96,14 @@ export default function StatsCarousel() {
                     className="object-cover pointer-events-none"
                     priority
                     quality={100}
-                    unoptimized={true}
+                    unoptimized
                     sizes="100vw"
                     placeholder="blur"
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAEDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                   />
                 </div>
 
-                <div className="relative z-10 text-center text-white px-8 max-w-4xl">
+                <div className="relative z-10 text-center text-white px-8 max-w-5xl">
                   <h2 className="text-4x lg:text-5xl font-bold font-sf-pro-display mb-8 leading-14">
                     {stat.title}
                   </h2>

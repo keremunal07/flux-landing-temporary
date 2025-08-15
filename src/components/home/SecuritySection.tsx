@@ -57,11 +57,12 @@ export default function SecuritySection() {
           <div className="relative z-10 flex justify-center">
             <div className="relative">
               <Image
-                src="/security-section-phone.png"
+                src="/security-section-phone.webp"
                 alt="Security App Interface"
                 width={367}
                 height={564}
-                className="w-auto h-auto pointer-events-none"
+                className="pointer-events-none"
+                unoptimized
                 priority
               />
             </div>

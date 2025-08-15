@@ -31,9 +31,10 @@ export default function AssetSection() {
           <Image
             width={572}
             height={612}
-            src="/asset-section-phone.png"
+            src="/asset-section-phone.webp"
             alt="Flux Assets"
             className="mx-auto pointer-events-none"
+            unoptimized
           />
         </div>
       </div>
@@ -51,7 +52,7 @@ export default function AssetSection() {
             <Image
               width={60}
               height={32}
-              src="/assets-card-images/switch.png"
+              src="/assets-card-images/switch.svg"
               alt="Flux switch"
               className="pointer-events-none"
             />
@@ -77,7 +78,7 @@ export default function AssetSection() {
                 <Image
                   width={26}
                   height={14}
-                  src="/assets-card-images/icon-1.png"
+                  src="/assets-card-images/icon-1.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -86,7 +87,7 @@ export default function AssetSection() {
                 <Image
                   width={22}
                   height={20}
-                  src="/assets-card-images/icon-2.png"
+                  src="/assets-card-images/icon-2.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -95,7 +96,7 @@ export default function AssetSection() {
                 <Image
                   width={25}
                   height={25}
-                  src="/assets-card-images/icon-3.png"
+                  src="/assets-card-images/icon-3.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -104,7 +105,7 @@ export default function AssetSection() {
                 <Image
                   width={33}
                   height={33}
-                  src="/assets-card-images/icon-4.png"
+                  src="/assets-card-images/icon-4.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -113,7 +114,7 @@ export default function AssetSection() {
                 <Image
                   width={30}
                   height={30}
-                  src="/assets-card-images/icon-5.png"
+                  src="/assets-card-images/icon-5.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -122,7 +123,7 @@ export default function AssetSection() {
                 <Image
                   width={25}
                   height={25}
-                  src="/assets-card-images/icon-6.png"
+                  src="/assets-card-images/icon-6.svg"
                   alt="Flux icon"
                   className="pointer-events-none"
                 />
@@ -148,7 +149,7 @@ export default function AssetSection() {
             <Image
               width={50}
               height={50}
-              src="/assets-card-images/24-hours.png"
+              src="/assets-card-images/24-hours.svg"
               alt="Flux 24 Hours"
               className="pointer-events-none"
             />

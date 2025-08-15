@@ -15,18 +15,18 @@ const carouselData = [
     title: "Stablecoin-to-Fiat Transfers",
     description:
       "Instantly send USD or EUR to any bank account, anywhere in the world",
-    src: "/stablecoin-section-phone-1.png",
+    src: "/stablecoin-section-phone-1.webp",
   },
   {
     title: "Virtual Bank Account",
     description:
       "Accept USD and EUR bank transfers that land in your wallet as stablecoins.",
-    src: "/stablecoin-section-phone-2.png",
+    src: "/stablecoin-section-phone-2.webp",
   },
   {
     title: "Borrow Stablecoins",
     description: "Use your crypto as collateral to unlock stablecoins anytime.",
-    src: "/stablecoin-section-phone-3.png",
+    src: "/stablecoin-section-phone-3.webp",
   },
 ];
 
@@ -123,6 +123,7 @@ export default function StablecoinSection() {
                     width={400}
                     height={400}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                    unoptimized
                   />
                 </div>
               </div>

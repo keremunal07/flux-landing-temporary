@@ -4,35 +4,35 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 const features = {
   send: [
     {
-      image: "/features-card-images/via-worldwide.png",
+      image: "/features-card-images/spend-and-send-1.webp",
     },
     {
-      image: "/features-card-images/schedule-payments.png",
+      image: "/features-card-images/spend-and-send-2.webp",
     },
     {
-      image: "/features-card-images/spend-globally.png",
+      image: "/features-card-images/spend-and-send-3.webp",
     },
   ],
   schedule: [
     {
-      image: "/features-card-images/trade-perpetuals.png",
+      image: "/features-card-images/grow-and-trade-1.webp",
     },
     {
-      image: "/features-card-images/use-ai-manage.png",
+      image: "/features-card-images/grow-and-trade-2.webp",
     },
     {
-      image: "/features-card-images/earn-yield.png",
+      image: "/features-card-images/grow-and-trade-3.webp",
     },
   ],
   spend: [
     {
-      image: "/features-card-images/secure-access-to.png",
+      image: "/features-card-images/protect-1.webp",
     },
     {
-      image: "/features-card-images/keep-transfers-hidden.png",
+      image: "/features-card-images/protect-2.webp",
     },
     {
-      image: "/features-card-images/set-spending-limits.png",
+      image: "/features-card-images/protect-3.webp",
     },
   ],
 };
@@ -74,6 +74,7 @@ export default function Features() {
                     width={428}
                     height={624}
                     className="w-full h-full object-cover rounded-lg"
+                    unoptimized
                   />
                 </div>
               ))}

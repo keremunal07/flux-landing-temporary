@@ -57,9 +57,10 @@ export default function WhoItsForSection() {
             <Image
               width={585}
               height={610}
-              src="/any-man.png"
+              src="/any-man.webp"
               alt="Flux"
               className="pointer-events-none w-full max-w-[585px]"
+              unoptimized
             />
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-[356px] p-4 rounded-2xl bg-white flex justify-between items-center">
               <div className="w-full">

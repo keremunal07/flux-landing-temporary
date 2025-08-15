@@ -55,11 +55,12 @@ export default function Hero() {
         <div className="flex justify-center lg:justify-start">
           <div className="relative">
             <Image
-              src="/phone-mockup.png"
+              src="/phone-mockup.webp"
               alt="Mobile App Interface"
               width={640}
               height={576}
-              className=""
+              unoptimized
+              className="pointer-events-none"
               priority
             />
           </div>
